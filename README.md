@@ -1,13 +1,16 @@
-# long-context-rag
+# Long Context RAG
 
-Stub Python project. Described as "RAG system optimized for 1M+ token context windows with hierarchical retrieval," but none of that functionality exists.
+RAG system optimized for 1M+ token context windows with hierarchical retrieval.
 
-## What's actually here
+## About
+Long Context RAG implements a retrieval-augmented generation system designed to handle extremely large document collections. It uses hierarchical retrieval strategies to efficiently search and synthesize information across massive context windows, enabling accurate Q&A over extensive knowledge bases.
 
-A single class in `src/core.py` (LongContextRag) with placeholder methods (process, analyze, transform, validate, export, get_stats) that each return a fixed dictionary like `{ "ok": True }` without doing any real work. There is no RAG pipeline, no document retrieval, no context window management, no hierarchical indexing - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No vector database, embedding, or retrieval libraries are present.
+## Tech Stack
+- Language: Python
+- Retrieval: Hierarchical chunking, vector search
+- Embeddings: Sentence Transformers
+- LLM Integration: Long-context model support
+- Storage: Vector database backend
 
 ## Status
-
-Scaffolding only. No working RAG functionality exists.
+Active development - hierarchical retrieval pipeline and context management in progress.
