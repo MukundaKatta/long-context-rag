@@ -1,61 +1,13 @@
-# Long Context Rag
+# long-context-rag
 
-RAG optimized for 1M+ token contexts with hierarchical retrieval
+Stub Python project. Described as "RAG system optimized for 1M+ token context windows with hierarchical retrieval," but none of that functionality exists.
 
-## Features
+## What's actually here
 
-- Api
-Chunker
-Compressor
-Context Builder
-Embedder
-Indexer
-Reranker
-Retriever
+A single class in `src/core.py` (LongContextRag) with placeholder methods (process, analyze, transform, validate, export, get_stats) that each return a fixed dictionary like `{ "ok": True }` without doing any real work. There is no RAG pipeline, no document retrieval, no context window management, no hierarchical indexing - just stubs.
 
-## Tech Stack
+The project uses only Python standard library imports (time, logging, json, typing). No vector database, embedding, or retrieval libraries are present.
 
-- **Language:** Python
-- **Framework:** FastAPI
-- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
-- **Containerization:** Docker + Docker Compose
+## Status
 
-## Getting Started
-
-### Prerequisites
-
-- Python 3.11+
-- Docker & Docker Compose (optional)
-
-### Installation
-
-```bash
-git clone https://github.com/MukundaKatta/long-context-rag.git
-cd long-context-rag
-pip install -r requirements.txt
-```
-
-### Running
-
-```bash
-uvicorn app.main:app --reload
-```
-
-### Docker
-
-```bash
-docker-compose up
-```
-
-## Project Structure
-
-```
-long-context-rag/
-├── src/           # Source code
-├── tests/         # Test suite
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
-```
-
+Scaffolding only. No working RAG functionality exists.
