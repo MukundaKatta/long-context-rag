@@ -1,31 +1,64 @@
-# long-context-rag
+# Long Context Rag
 
-**RAG optimized for 1M+ token contexts with hierarchical retrieval**
+RAG optimized for 1M+ token contexts with hierarchical retrieval
 
-## Install
+## Features
+
+- Api
+Chunker
+Compressor
+Context Builder
+Embedder
+Indexer
+Reranker
+Retriever
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/long-context-rag.git
+cd long-context-rag
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **retriever**
-- **indexer**
-- **chunker**
-- **embedder**
-- **reranker**
-- **context_builder**
-- **compressor**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+long-context-rag/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
