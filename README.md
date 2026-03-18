@@ -59,6 +59,3 @@ long-context-rag/
 └── README.md
 ```
 
-## License
-
-MIT
